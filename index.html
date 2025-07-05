@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Vulnerable Test</title>
+</head>
+<body>
+  <h1>Vulnerable Reflection Test</h1>
+  <p id="output"></p>
+  <script>
+    const params = new URLSearchParams(location.search);
+    document.getElementById('output').innerHTML = params.get('input');
+  </script>
+</body>
+</html>
